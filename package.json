@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/QuincyLi/KOADemo/issues"
   },
-  "homepage": "https://github.com/QuincyLi/KOADemo#readme"
+  "homepage": "https://github.com/QuincyLi/KOADemo#readme",
+  "dependencies": {
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
 }
