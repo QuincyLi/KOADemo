@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/QuincyLi/KOADemo#readme",
   "dependencies": {
+    "koa": "^2.5.2",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   }
