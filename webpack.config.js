@@ -1,4 +1,7 @@
 module.exports = {
+    entry: {
+
+    },
     module: {
         rules: [
             {
