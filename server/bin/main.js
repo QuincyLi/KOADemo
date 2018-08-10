@@ -1,13 +1,13 @@
 import Koa from 'koa';
 import webpack from 'webpack';
 import { devMiddleware, hotMiddleware } from 'koa-webpack-middleware';
-import devConfig from '../../webpack.config/webpack.config.dev';
+import devConfig from '../../webpack.config/webpack.config.js';
 import router from '../routes/index';
 
 const app = new Koa();
-const complie = webpack(devConfig);
+const compile = webpack(devConfig);
 
-app.use(devMiddleware(complie, {
+app.use(devMiddleware(compile, {
   // display no info to console (only warnings and errors)
   noInfo: false,
 

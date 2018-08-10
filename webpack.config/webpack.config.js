@@ -38,6 +38,6 @@ module.exports = {
         new webpack.NamedModulesPlugin(), // 新增
         new webpack.HotModuleReplacementPlugin(), //新增
         new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoEmitOnErrorsPlugin()
     ]
 };
