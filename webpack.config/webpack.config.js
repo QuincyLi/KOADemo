@@ -32,7 +32,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.html",
+            template: "../src/index.html",
             filename: "./index.html"
         }),
         new webpack.NamedModulesPlugin(), // 新增
