@@ -1,7 +1,7 @@
 import Koa from 'koa';
 import webpack from 'webpack';
 import { devMiddleware, hotMiddleware } from 'koa-webpack-middleware';
-import devConfig from 'config/webpack.config.dev';
+import devConfig from '../../webpack.config/webpack.config.dev';
 import router from '../routes/index';
 
 const app = new Koa();

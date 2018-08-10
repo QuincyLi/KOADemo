@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack ./webpack.config/server.config --mode development",
+    "dev": "node server/app.js",
     "build": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
