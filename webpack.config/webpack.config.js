@@ -23,6 +23,13 @@ module.exports = {
                 }
             },
             {
+                test: /\.css$/,
+                use: [ 
+                    'style-loader', 
+                    'css-loader'
+                ]
+            },
+            {
                 test: /\.html$/,
                 use: [
                     {
@@ -38,6 +45,11 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
+        }),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+           Popper: ['popper.js', 'default'],
         }),
         new webpack.NamedModulesPlugin(), // 新增
         new webpack.optimize.OccurrenceOrderPlugin(),

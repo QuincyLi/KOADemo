@@ -10,6 +10,10 @@ const compile = webpack(devConfig);
 
 app.use(devMiddleware(compile, {
   noInfo: true, 
+  // 编译信息有颜色显示
+  stats: {
+    colors: true
+  }
   // publicPath: devConfig.output.publicPath
 }));
 
