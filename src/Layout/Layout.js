@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import NavBar from './Navbar'
+
 class Layout extends Component{
   render(){
     return (
-      <div>
-        123123123
+      <div className="container">
+        <NavBar />
+        <div className="row">
+        
+        </div>
       </div>
     )
   }
