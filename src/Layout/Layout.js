@@ -7,8 +7,8 @@ import ErrorBoundary from './ErrorBoundary';
 class Layout extends Component{
   navbarClick = (args, e) => {
     switch(args){
-      case 'ant': this.getActive('http://192.168.10.208:8000',e);break;
-      case 'work': this.getActive('http://192.168.10.208:8080',e);break;
+      case 'ant': this.getActive('http://localhost:8000',e);break;
+      case 'work': this.getActive('http://localhost:8080',e);break;
     }
   }
 
@@ -22,6 +22,13 @@ class Layout extends Component{
     }
   }
 
+  postMessage = () => {
+    const data = {
+      token: 'test 123123123123123123'
+    }
+    this.container.contentWindow.postMessage(data, this.container.src);
+  }
+
   render(){
     return (
       <div className="container">
@@ -30,7 +37,7 @@ class Layout extends Component{
         />
         <ErrorBoundary>
           <div className="embed-responsive embed-responsive-16by9">
-            <iframe ref={(container) => { this.container = container;}} className="embed-responsive-item" src="http://192.168.10.208:8080" allowFullScreen></iframe>
+            <iframe ref={(container) => { this.container = container;}} className="embed-responsive-item" src="http://localhost:8080" onLoad={this.postMessage} allowFullScreen></iframe>
           </div>
         </ErrorBoundary>
       </div>
