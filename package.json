@@ -32,10 +32,9 @@
     "koa-router": "^7.4.0",
     "koa-webpack-dev-middleware": "^2.0.2",
     "koa-webpack-hot-middleware": "^1.0.3",
-    "mobx": "^5.0.3",
-    "mobx-react": "^5.2.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "request": "^2.88.0",
     "style-loader": "^0.22.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
